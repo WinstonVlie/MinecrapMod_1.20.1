@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "malpracticemod:raw_opiods"
+    }
+  },
+  "result": {
+    "item": "malpracticemod:opiod_block"
+  }
+}

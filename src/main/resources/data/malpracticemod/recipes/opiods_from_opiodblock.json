@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "malpracticemod:opiod_block"
+    }
+  ],
+  "result": {
+    "item": "malpracticemod:raw_opiods",
+    "count": 4
+  }
+}
