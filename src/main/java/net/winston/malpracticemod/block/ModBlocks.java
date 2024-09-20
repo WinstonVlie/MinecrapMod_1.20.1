@@ -21,7 +21,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> Opiod_Block = registerBlock("opiod_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.MELON))); // Sidenote here: I copied a melon block here but I can also create my oen with .of and not copy
     // I can still overwrite things, if I want a different sound I add .soud AFTER the MELON) or some shit like that
-
+    public static final RegistryObject<Block> Refined_Opiod_Block = registerBlock("refined_opiod_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MELON)));
 
 
 // Second line registers the block. Third line registers the blockitem, last line returns the block

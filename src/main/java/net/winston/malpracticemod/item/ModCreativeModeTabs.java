@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                         output.accept(Moditems.Refined_Opiods.get());
 
                         output.accept(ModBlocks.Opiod_Block.get());
+                        output.accept(ModBlocks.Refined_Opiod_Block.get());
 
                     })
 
