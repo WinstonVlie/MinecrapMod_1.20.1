@@ -1,6 +1,7 @@
 package net.winston.malpracticemod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -12,6 +13,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.winston.malpracticemod.item.Moditems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -27,6 +29,8 @@ public class Malpracticemod
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        Moditems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -40,9 +44,11 @@ public class Malpracticemod
 
     }
 
-    // Add the example block item to the building blocks tab
+    // This will add items to the existing creative tab; my opiods are being added here in the "ingredients" tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(Moditems.Raw_Opiods);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
