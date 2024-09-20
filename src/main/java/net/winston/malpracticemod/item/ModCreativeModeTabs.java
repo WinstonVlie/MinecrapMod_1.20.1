@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.winston.malpracticemod.Malpracticemod;
+import net.winston.malpracticemod.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -20,6 +21,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.Raw_Opiods.get());
                         output.accept(Moditems.Refined_Opiods.get());
+
+                        output.accept(ModBlocks.Opiod_Block.get());
 
                     })
 
