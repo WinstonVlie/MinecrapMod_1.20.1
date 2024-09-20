@@ -15,6 +15,9 @@ public class Moditems {
 
     public static final RegistryObject<Item> Raw_Opiods = ITEMS.register("raw_opiods",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> Refined_Opiods = ITEMS.register("refined_opiods",
+            () -> new Item(new Item.Properties()));
+    
 
 
 

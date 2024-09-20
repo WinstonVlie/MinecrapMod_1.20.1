@@ -48,6 +48,7 @@ public class Malpracticemod
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(Moditems.Raw_Opiods);
+            event.accept(Moditems.Refined_Opiods);
         }
     }
 
