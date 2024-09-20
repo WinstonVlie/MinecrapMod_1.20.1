@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "malpracticemod:item/sapphire"
+    "layer0": "malpracticemod:item/raw_opiods"
   }
 }

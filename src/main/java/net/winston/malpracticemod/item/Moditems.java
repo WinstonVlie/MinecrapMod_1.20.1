@@ -13,7 +13,7 @@ public class Moditems {
     // A Deferred Registry is basically a list of items. We add our items to our list, and hope Forge loads them
     // From here on below, I will add items. The rest was for libraries and imports and shit
 
-    public static final RegistryObject<Item> Raw_Opiods = ITEMS.register("RawOpiods",
+    public static final RegistryObject<Item> Raw_Opiods = ITEMS.register("raw_opiods",
             () -> new Item(new Item.Properties()));
 
 
