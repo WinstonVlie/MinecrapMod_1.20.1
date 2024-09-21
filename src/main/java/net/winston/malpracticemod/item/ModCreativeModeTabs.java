@@ -21,9 +21,13 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.Raw_Opiods.get());
                         output.accept(Moditems.Refined_Opiods.get());
+                        output.accept(Moditems.Raw_Titanium.get());
 
                         output.accept(ModBlocks.Opiod_Block.get());
                         output.accept(ModBlocks.Refined_Opiod_Block.get());
+
+                        output.accept(ModBlocks.Titanium_Ore.get());
+                        output.accept(ModBlocks.Titanium_Block.get());
 
                     })
 

@@ -24,6 +24,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> Refined_Opiod_Block = registerBlock("refined_opiod_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.MELON)));
 
+    public static final RegistryObject<Block> Titanium_Ore = registerBlock("titanium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
+    public static final RegistryObject<Block> Titanium_Block = registerBlock("titanium_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
+
 
 // Second line registers the block. Third line registers the blockitem, last line returns the block
     private static <T extends Block> RegistryObject<T> registerBlock (String name, Supplier<T> block) {

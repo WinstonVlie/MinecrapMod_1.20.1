@@ -1,9 +1,13 @@
 {
   "item.malpracticemod.raw_opiods": "Raw Opiods",
   "item.malpracticemod.refined_opiods": "Refined Opiods",
+  "item.malpracticemod.raw_titanium": "Raw Titanium",
 
   "block.malpracticemod.opiod_block": "Block of Opiods",
   "block.malpracticemod.refined_opiod_block": "Block of Refined Opiods",
+  "block.malpracticemod.titanium_ore": "Titanium Ore",
+  "block.malpracticemod.raw_titanium": "Raw Titanium",
+  "block.malpracticemod.titanium_block": "Block of Titanium",
 
   "creativetab.malpractice_tab": "Dr. D's Medical Mishaps"
 }
